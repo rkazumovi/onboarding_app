@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Onboarding</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Start Onboarding</h2>
+
+        <form method="post" action="/submit">
+
+            <label>First Name</label>
+            <input name="first_name" required>
+
+            <label>Last Name</label>
+            <input name="last_name" required>
+
+            <label>Email</label>
+            <input name="email" type="email" required>
+            
+            <label style="font-weight: 600; display: block; margin-bottom: 8px;">Select Team</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="teams" value="Automation">Automation</label>
+                <label><input type="checkbox" name="teams" value="Design">Design</label>
+                <label><input type="checkbox" name="teams" value="Robotics">Robotics</label>
+                <label><input type="checkbox" name="teams" value="Software Development">Software Development</label>
+                <label><input type="checkbox" name="teams" value="Space">Space</label>
+            </div>
+
+            <label>Weekly Commitment (hours)</label>
+            <input name="weekly_commitment" type="number" required>
+
+            <label>Tuition Fee</label>
+            <input name="tuition_fee" type="number" required>
+
+            <label>Monthly Fee</label>
+            <input name="monthly_fee" type="number" required>
+
+            <label>Start Date</label>
+            <input name="start_date" type="date" required>
+
+            <button type="submit">Start Onboarding</button>
+
+        </form>
+    </div>
+
+</body>
+</html>
